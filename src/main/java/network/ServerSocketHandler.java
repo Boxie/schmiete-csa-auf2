@@ -18,6 +18,7 @@ public class ServerSocketHandler{
 	private SocketHandler Client; 
 	private String pages;
 	private PrintStream Output;
+	private boolean running;
 	
 	private void init() throws IOException{
 		Server = new ServerSocket(Port);
@@ -120,5 +121,7 @@ public class ServerSocketHandler{
 		CloseMessage = closeMessage;
 	}
 	
-	
+	public boolean isRunning(){
+		return running;
+	}
 }
