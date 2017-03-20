@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsonsurfer.gui.aufgaben.aufgabe6.Controller">
+   <children>
+      <TextArea fx:id="consoleTextArea" layoutX="10.0" layoutY="55.0" prefHeight="261.0" prefWidth="580.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0" />
+      <Button fx:id="clearConsoleButton" layoutX="10.0" layoutY="335.0" mnemonicParsing="false" onAction="#clearConsole" prefHeight="27.0" prefWidth="567.0" text="Clear Console" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="14.0" layoutY="19.0" text="Webserver:" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="startButton" layoutX="520.0" layoutY="14.0" mnemonicParsing="false" onAction="#stop" prefHeight="27.0" prefWidth="80.0" text="Stop" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="startButton1" layoutX="420.0" layoutY="14.0" mnemonicParsing="false" onAction="#start" prefHeight="27.0" prefWidth="80.0" text="Start" />
+   </children>
+</AnchorPane>

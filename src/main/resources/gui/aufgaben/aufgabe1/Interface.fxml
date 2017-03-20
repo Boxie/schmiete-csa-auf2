@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsonsurfer.gui.aufgaben.aufgabe1.Controller">
+   <children>
+      <Label layoutX="14.0" layoutY="29.0" prefHeight="17.0" prefWidth="100.0" text="Request IP:" AnchorPane.leftAnchor="10.0" />
+      <Button fx:id="getDomainButton" layoutX="486.0" layoutY="24.0" mnemonicParsing="false" onAction="#getDomain" prefHeight="27.0" prefWidth="100.0" text="Get Domain" AnchorPane.rightAnchor="10.0" />
+      <TextField fx:id="IPAddressTextField" layoutX="90.0" layoutY="24.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="120.0" />
+      <Label layoutX="10.0" layoutY="70.0" prefHeight="17.0" prefWidth="100.0" text="Req. Domain:" />
+      <Button fx:id="getIPButton" layoutX="490.0" layoutY="65.0" mnemonicParsing="false" onAction="#getIP" prefHeight="27.0" prefWidth="100.0" text="Get IP" AnchorPane.rightAnchor="10.0">
+         <opaqueInsets>
+            <Insets bottom="10.0" />
+         </opaqueInsets>
+      </Button>
+      <TextField fx:id="DomainTextField" layoutX="110.0" layoutY="65.0" prefHeight="27.0" prefWidth="370.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="120.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextArea fx:id="ConsoleTextArea" editable="false" layoutX="10.0" layoutY="137.0" prefHeight="198.0" prefWidth="580.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="140.0" />
+      <HBox layoutX="110.0" layoutY="100.0" snapToPixel="false" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="tenDomainsButton" minWidth="235.0" mnemonicParsing="false" onAction="#getJSONDomains" text="JSON Domains">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="tenIPsButton" minWidth="235.0" mnemonicParsing="false" onAction="#getJSONIPAddress" text="JSON IP's">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="clearConsoleButton" layoutX="455.0" layoutY="340.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" text="Clear Console" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

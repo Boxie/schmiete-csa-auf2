@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsonsurfer.gui.MainController">
+  <tabs>
+    <Tab text="Aufgabe 1">
+      <content>
+          <fx:include fx:id="auf1" source="aufgaben/aufgabe1/Interface.fxml"/>
+      </content>
+    </Tab>
+    <Tab text="Aufgabe 2">
+      <content>
+          <fx:include fx:id="auf2" source="aufgaben/aufgabe2/Interface.fxml"/>
+      </content>
+    </Tab>
+      <Tab text="Aufgabe 3">
+        <content>
+          <fx:include fx:id="auf3" source="aufgaben/aufgabe3/Interface.fxml"/>
+        </content>
+      </Tab>
+      <Tab text="Aufgabe 4">
+        <content>
+          <fx:include fx:id="auf4" source="aufgaben/aufgabe4/Interface.fxml"/>
+        </content>
+      </Tab>
+      <Tab text="Aufgabe 5">
+        <content>
+          <fx:include fx:id="auf5" source="aufgaben/aufgabe5/Interface.fxml"/>
+        </content>
+      </Tab>
+      <Tab text="Aufgabe 6">
+        <content>
+          <fx:include fx:id="auf6" source="aufgaben/aufgabe6/Interface.fxml"/>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

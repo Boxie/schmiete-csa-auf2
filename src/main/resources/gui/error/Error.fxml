@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jsonsurfer.gui.error.ErrorController">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0">
+               <image>
+                  <Image url="@error.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="185.0" layoutY="110.0" text="Ops!" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="185.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+      <TextArea fx:id="errorTextArea" editable="false" prefHeight="200.0" prefWidth="380.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <Button mnemonicParsing="false" onAction="#closeWindow" prefHeight="27.0" prefWidth="415.0" text="Okay">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

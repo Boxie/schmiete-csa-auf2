@@ -1,0 +1,39 @@
+{
+  "domains": [
+    "www.google.de",
+    "www.facebook.de",
+    "www.twitter.com",
+    "www.youtube.com",
+    "www.amazon.de",
+    "www.ebay.com",
+    "www.wikipedia.org",
+    "www.paypal.com",
+    "www.hwr-berlin.de",
+    "www.microsoft.com"
+  ],
+  "ipaddress": [
+    "64.202.189.170",
+    "68.178.232.99",
+    "207.217.125.50",
+    "80.150.6.143",
+    "216.240.187.175",
+    "216.240.187.145",
+    "213.186.33.19",
+    "89.31.143.2",
+    "81.169.145.91",
+    "194.94.23.252"
+  ],
+  "timeservers": [
+    "time.fu-berlin.de",
+    "time-a.nist.gov",
+    "nist1-macon.macon.ga.us",
+    "utcnist.colorado.edu",
+    "ntps1-0.cs.tu-berlin.de",
+    "me-a.timefreq.bldrdoc.gov",
+    "time.google.com"
+
+  ],
+  "ntp-timeservers": [
+    "times.tubit.tu-berlin.de"
+  ]
+}
