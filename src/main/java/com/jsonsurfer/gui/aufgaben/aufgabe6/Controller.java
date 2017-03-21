@@ -28,13 +28,13 @@ public class Controller extends MainController {
      * Start WebServer
      * @throws Exception
      */
-    public void start() throws Exception{
+    public void start(){
     	this.webServer = new ServerSocketHandler("pages",console);
     	new Thread(){
         	public void run(){
         		try {
         			webServer.ExperimentalWebserver();
-				} catch (IOException e) {
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
                     showError(e.getMessage());
@@ -46,12 +46,16 @@ public class Controller extends MainController {
     /**
      * Close WebServer
      */
-    public void stop() throws Exception{
+    public void stop(){
         //TODO boolean server running?
-        if(webServer.isRunning()) {
-            webServer.endExperimentalWebserver();
-        } else {
-            console.print("Webserver not running\n");
+        try {
+            if (webServer.isRunning()) {
+                webServer.endExperimentalWebserver();
+            } else {
+                console.print("Webserver not running\n");
+            }
+        } catch (Exception e) {
+            showError(e.getMessage());
         }
     }
 
