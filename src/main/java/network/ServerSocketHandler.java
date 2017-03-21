@@ -36,7 +36,7 @@ public class ServerSocketHandler{
 		try {
 			Server.close();
 		} catch (SocketException e){
-			Output.println("ERRROR: On Server closing.");
+			
 		}
 		Output.println("Server Closed.");
 		running = false;
