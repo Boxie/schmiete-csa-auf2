@@ -45,8 +45,13 @@ public class Controller extends MainController {
     public void stop(){
         //TODO boolean server running?
         try {
-            echo.endTelnet();
-            console.print("Stopped TelNet\n");
+            if(echo.isRunning()) {
+                echo.endTelnet();
+                console.print("Stopped TelNet\n");
+            } else {
+                console.print("TelNet not running\n");
+            }
+
         } catch (IOException e) {
             showError(e.getMessage());
             e.printStackTrace();

@@ -48,7 +48,7 @@ public class Controller extends MainController {
      */
     public void stop() throws Exception{
         //TODO boolean server running?
-        if(webServer != null) {
+        if(webServer.isRunning()) {
             webServer.endExperimentalWebserver();
         } else {
             console.print("Webserver not running\n");

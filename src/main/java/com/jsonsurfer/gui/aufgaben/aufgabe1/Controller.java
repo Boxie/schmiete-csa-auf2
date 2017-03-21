@@ -63,7 +63,7 @@ public class Controller extends MainController{
     public void getJSONDomains() throws IOException, ParseException {
         // loop array
         JSON jsonCon = new JSON();
-        JSONObject jsonObject = jsonCon.getJSONObject("data/data.json");
+        JSONObject jsonObject = jsonCon.getJSONObject("/data/data.json");
         JSONArray domains = (JSONArray) jsonObject.get("ipaddress");
         Connection conn = new Connection();
 
@@ -81,7 +81,7 @@ public class Controller extends MainController{
     public void getJSONIPAddress() throws IOException, ParseException {
         // loop array
         JSON jsonCon = new JSON();
-        JSONObject jsonObject = jsonCon.getJSONObject("data/data.json");
+        JSONObject jsonObject = jsonCon.getJSONObject("/data/data.json");
         JSONArray domains = (JSONArray) jsonObject.get("domains");
         Connection conn = new Connection();
 
