@@ -5,6 +5,7 @@ import java.io.PrintStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 
 import output.ClientOutput;
 import input.LineReaderInput;
@@ -32,7 +33,12 @@ public class ServerSocketHandler{
 	}
 	
 	private void close() throws IOException{
-		Server.close();
+		try {
+			Server.close();
+		} catch (SocketException e){
+			Output.println("ERRROR: On Server closing.");
+		}
+		Output.println("Server Closed.");
 		running = false;
 	}
 	
