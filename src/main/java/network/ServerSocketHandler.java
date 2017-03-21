@@ -18,11 +18,12 @@ public class ServerSocketHandler{
 	private SocketHandler Client; 
 	private String pages;
 	private PrintStream Output;
-	private boolean running;
+	private boolean running = false;
 	
 	private void init() throws IOException{
 		Server = new ServerSocket(Port);
 		Output.println("Server started @ "+InetAddress.getLocalHost());
+		running = true;
 	}
 	
 	private void open() throws IOException{
@@ -32,6 +33,7 @@ public class ServerSocketHandler{
 	
 	private void close() throws IOException{
 		Server.close();
+		running = false;
 	}
 	
 	public ServerSocketHandler (int port, String message, PrintStream Out) throws IOException{
